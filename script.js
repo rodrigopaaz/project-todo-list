@@ -18,4 +18,12 @@ let apagaLista = document.getElementsByTagName('li')
             else {capturaLista.add('completed')}
         })
 
+    let remover = document.getElementById('remover-finalizados')
+    remover.addEventListener('click', function () {
+       let remove = document.getElementsByClassName('completed') 
+        for (let index=0; index<=remove.length; index+=1){
+            taskList.removeChild(remove[0])
+        }
+    })
+
 
